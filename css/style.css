@@ -1,0 +1,1154 @@
+@charset "UTF-8";
+/* Font Robto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* CARACTERISTICAS GENERALES DEL SITIO */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* DEINO EL MAP */
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* Defino caracteristicas del header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  /* Defino caracteristicas del logo */
+}
+header .logo {
+  height: 50px;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+header .navbar ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #333;
+  border-radius: 3px;
+  display: block;
+  text-decoration: none;
+}
+header .navbar ul li a.active, header .navbar ul li a:hover {
+  background: #54595F;
+  color: #fff;
+  transition: 0.5s;
+}
+header .navbar ul li:focus-within, header .navbar ul li:hover > ul {
+  display: initial;
+  transition: 0.5s;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#menu-bar {
+  display: none;
+}
+
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* Defino caracteristicas del header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  /* Defino caracteristicas del logo */
+}
+header .logo {
+  height: 50px;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+header .navbar ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #333;
+  border-radius: 3px;
+  display: block;
+  text-decoration: none;
+}
+header .navbar ul li a.active, header .navbar ul li a:hover {
+  background: #54595F;
+  color: #fff;
+  transition: 0.5s;
+}
+header .navbar ul li:focus-within, header .navbar ul li:hover > ul {
+  display: initial;
+  transition: 0.5s;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#menu-bar {
+  display: none;
+}
+
+/*Grilla */
+/* Font Robto */
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* CARACTERISTICAS GENERALES DEL SITIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* DEINO EL MAP */
+main {
+  /* DEFINO CARACTERISTICAS GENERALES */
+  /* DEFINO CARACTERISTICAS DE MI HOME PAGE */
+  /* FORM DE CONTACTO DENTRO DE MI HOME PAGE */
+  /* FIN DE FORMULARIO DE CONTACTO */
+  /* FIN DE MI HOME PAGE */
+  /* DEFINO CARACTERISTICAS DE MIS GALERIAS DE FOTOS */
+  /* FOTOS DE COCINAS */
+  /* FIN FOTOS DE COCINAS */
+  /* FOTOS DE DORMITORIOS */
+  /* FIN FOTOS DE DORMITORIOS */
+  /* FOTOS DE BAÑOS */
+  /* FIN FOTOS DE BAÑOS */
+  /* FIN GALERIAS DE FOTOS */
+}
+main .parrafo, main .presupuestoRespuesta {
+  margin-top: 5px;
+  font-size: 0.75em;
+}
+main .boton, main .btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px 50px 20px 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.1s;
+}
+main .boton:hover, main .btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+main .cocina {
+  grid-area: cocina;
+  background: url("../src/images/cocinas/cocina 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .cocina:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .dormitorio {
+  grid-area: dormitorio;
+  background: url("../src/images/dormitorios/placard 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .dormitorio:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .baño {
+  grid-area: baño;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .baño:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .portadaHome {
+  grid-area: portada;
+  background: url("../src/images/cocinas/cocina 1.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: left;
+  color: #fff;
+  padding: 25vh 10vh;
+  background-position: 50% 40%;
+  opacity: 100%;
+}
+main .trabajos {
+  grid-area: trabajos;
+  background-color: #fff;
+  color: #54595F;
+  margin: 20vh;
+  font-size: 1em;
+}
+main .solid {
+  margin: 2vh auto;
+  border: 1px solid #54595F;
+  width: 100px;
+}
+main .contacto {
+  grid-area: contacto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  padding-left: 25vw;
+}
+main .contacto:after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+  background-color: #e7e7e7;
+  z-index: -1;
+}
+main .presupuestoRespuesta {
+  color: #54595F;
+  padding-bottom: 20px;
+}
+main .contact-box {
+  max-width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+main .left {
+  height: 50%;
+  background: url("../src/images/mapas/1.jpeg") no-repeat center;
+  background-size: cover;
+}
+main .right {
+  padding: 50px 40px;
+}
+main .field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: #e7e7e7;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+main .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main .field:focus {
+  background-color: #fff;
+  border: 2px solid #333;
+}
+main .area {
+  min-height: 150px;
+}
+main .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  margin-top: 0px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 4px;
+}
+main .portadaCocina {
+  grid-area: portada;
+  background: url("../src/images/cocinas/cocina 3.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 50% 65%;
+  opacity: 80%;
+}
+main .portadaDormitorio {
+  grid-area: portada;
+  background: url("../src/images/dormitorios/Modular.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 50% 220%;
+  opacity: 100%;
+}
+main .portadaBaño {
+  grid-area: portada;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 0% 95%;
+  opacity: 100%;
+}
+main .cocina1 {
+  grid-area: item1;
+  background: url("../src/images/cocinas/cocina 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina2 {
+  grid-area: item2;
+  background: url("../src/images/cocinas/cocina 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina3 {
+  grid-area: item3;
+  background: url("../src/images/cocinas/cocina 3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .cocina4 {
+  grid-area: item4;
+  background: url("../src/images/cocinas/cocina 4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina5 {
+  grid-area: item5;
+  background: url("../src/images/cocinas/cocina 5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina6 {
+  grid-area: item6;
+  background: url("../src/images/cocinas/cocina 6.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina7 {
+  grid-area: item7;
+  background: url("../src/images/cocinas/cocina 7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina8 {
+  grid-area: item8;
+  background: url("../src/images/cocinas/cocina 8.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina9 {
+  grid-area: item9;
+  background: url("../src/images/cocinas/cocina 9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 60%;
+}
+main .cocina10 {
+  grid-area: item10;
+  background: url("../src/images/cocinas/cocina 10.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina11 {
+  grid-area: item11;
+  background: url("../src/images/cocinas/cocina 11.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina12 {
+  grid-area: item12;
+  background: url("../src/images/cocinas/cocina 12.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 60%;
+}
+main .dormitorio1 {
+  grid-area: item1;
+  background: url("../src/images/dormitorios/Comoda y estantes flotantes.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+}
+main .dormitorio2 {
+  grid-area: item2;
+  background: url("../src/images/dormitorios/cajonera industrial.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 65%;
+}
+main .dormitorio3 {
+  grid-area: item3;
+  background: url("../src/images/dormitorios/Modular.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 38% 65%;
+}
+main .dormitorio4 {
+  grid-area: item4;
+  background: url("../src/images/dormitorios/RACK TV.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 80%;
+}
+main .dormitorio5 {
+  grid-area: item5;
+  background: url("../src/images/dormitorios/placard con cajonera y rack tv.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 65%;
+}
+main .dormitorio6 {
+  grid-area: item6;
+  background: url("../src/images/dormitorios/cama.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 65%;
+}
+main .dormitorio7 {
+  grid-area: item7;
+  background: url("../src/images/dormitorios/placard 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 80%;
+}
+main .dormitorio8 {
+  grid-area: item8;
+  background: url("../src/images/dormitorios/placard 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+}
+main .dormitorio9 {
+  grid-area: item9;
+  background: url("../src/images/dormitorios/placard 3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 50%;
+}
+main .dormitorio10 {
+  grid-area: item10;
+  background: url("../src/images/dormitorios/placard 4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+main .dormitorio11 {
+  grid-area: item11;
+  background: url("../src/images/dormitorios/vestidor.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+main .baño1 {
+  grid-area: item1;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 80%;
+}
+main .baño2 {
+  grid-area: item2;
+  background: url("../src/images/baños/baño 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+main .parrafoGaleria {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* ARCHIVO A DONDE DEFINO LOS MEDIA QUERYS PARA QUE EL SITIO SEA RESPONSIVE, TODAVIA TENGO QUE TRABAJAR EN ESTO, LO EMPECE PERO ME FALTA AJUSTARLO*/
+/* Media query Mobile*/
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul {
+    text-align: center;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: #54595F;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+
+  main .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70vh 50vh 60vh 60vh 60vh 120vh;
+    /* Especie de margin entre las columnas */
+    text-align: center;
+    font-size: 1.5rem;
+    grid-template-areas: "portada" "trabajos" "cocina" "dormitorio" "baño" "contacto";
+  }
+  main .contacto {
+    margin-left: 10vw;
+  }
+  main h1 {
+    font-size: 35px;
+  }
+  main .foto {
+    margin-top: -10vh;
+  }
+}
+/* Media query Tablet*/
+@media (min-width: 480px) and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul {
+    text-align: center;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: #54595F;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+
+  main .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70vh 50vh 60vh 60vh 60vh 80vh;
+    /* Especie de margin entre las columnas */
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "portada" "trabajos" "cocina" "dormitorio" "baño" "contacto";
+  }
+  main h1 {
+    font-size: 35px;
+  }
+  main .foto {
+    margin-top: -10vh;
+  }
+}
+/* Media query Desktop*/
+@media (min-width: 769px) {
+  /* Media query para mi home */
+  .grid-container {
+    display: grid;
+    margin: 70px 0 40px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60vh 40vh 50vh 70vh;
+    /* Especie de margin entre las columnas */
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "portada portada portada" "trabajos trabajos trabajos" "cocina dormitorio baño" "contacto contacto contacto";
+  }
+
+  /* Media query para las galerias */
+  .grid-container-galeria {
+    display: grid;
+    margin: 70px 0 40px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30vh 20vh 65vh 65vh 65vh 65vh;
+    /* Especie de margin entre las columnas */
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    gap: 10px;
+    grid-template-areas: "portada portada portada" "trabajos trabajos trabajos" "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" "contacto contacto contacto";
+  }
+}
+/*Grilla */
+/* Font Robto */
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* CARACTERISTICAS GENERALES DEL SITIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* DEINO EL MAP */
+main {
+  /* DEFINO CARACTERISTICAS GENERALES */
+  /* DEFINO CARACTERISTICAS DE MI HOME PAGE */
+  /* FORM DE CONTACTO DENTRO DE MI HOME PAGE */
+  /* FIN DE FORMULARIO DE CONTACTO */
+  /* FIN DE MI HOME PAGE */
+  /* DEFINO CARACTERISTICAS DE MIS GALERIAS DE FOTOS */
+  /* FOTOS DE COCINAS */
+  /* FIN FOTOS DE COCINAS */
+  /* FOTOS DE DORMITORIOS */
+  /* FIN FOTOS DE DORMITORIOS */
+  /* FOTOS DE BAÑOS */
+  /* FIN FOTOS DE BAÑOS */
+  /* FIN GALERIAS DE FOTOS */
+}
+main .parrafo, main .presupuestoRespuesta {
+  margin-top: 5px;
+  font-size: 0.75em;
+}
+main .boton, main .btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px 50px 20px 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.1s;
+}
+main .boton:hover, main .btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+main .cocina {
+  grid-area: cocina;
+  background: url("../src/images/cocinas/cocina 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .cocina:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .dormitorio {
+  grid-area: dormitorio;
+  background: url("../src/images/dormitorios/placard 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .dormitorio:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .baño {
+  grid-area: baño;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  padding: 25vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  opacity: 50%;
+}
+main .baño:hover {
+  color: transparent;
+  transition: all 0.3s ease;
+  transform: scale(0.96);
+  /* (96% zoom) */
+  opacity: 100%;
+}
+main .portadaHome {
+  grid-area: portada;
+  background: url("../src/images/cocinas/cocina 1.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: left;
+  color: #fff;
+  padding: 25vh 10vh;
+  background-position: 50% 40%;
+  opacity: 100%;
+}
+main .trabajos {
+  grid-area: trabajos;
+  background-color: #fff;
+  color: #54595F;
+  margin: 20vh;
+  font-size: 1em;
+}
+main .solid {
+  margin: 2vh auto;
+  border: 1px solid #54595F;
+  width: 100px;
+}
+main .contacto {
+  grid-area: contacto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  padding-left: 25vw;
+}
+main .contacto:after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+  background-color: #e7e7e7;
+  z-index: -1;
+}
+main .presupuestoRespuesta {
+  color: #54595F;
+  padding-bottom: 20px;
+}
+main .contact-box {
+  max-width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+main .left {
+  height: 50%;
+  background: url("../src/images/mapas/1.jpeg") no-repeat center;
+  background-size: cover;
+}
+main .right {
+  padding: 50px 40px;
+}
+main .field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: #e7e7e7;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+main .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main .field:focus {
+  background-color: #fff;
+  border: 2px solid #333;
+}
+main .area {
+  min-height: 150px;
+}
+main .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  margin-top: 0px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 4px;
+}
+main .portadaCocina {
+  grid-area: portada;
+  background: url("../src/images/cocinas/cocina 3.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 50% 65%;
+  opacity: 80%;
+}
+main .portadaDormitorio {
+  grid-area: portada;
+  background: url("../src/images/dormitorios/Modular.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 50% 220%;
+  opacity: 100%;
+}
+main .portadaBaño {
+  grid-area: portada;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 10vh 10vh;
+  background-position: 0% 95%;
+  opacity: 100%;
+}
+main .cocina1 {
+  grid-area: item1;
+  background: url("../src/images/cocinas/cocina 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina2 {
+  grid-area: item2;
+  background: url("../src/images/cocinas/cocina 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina3 {
+  grid-area: item3;
+  background: url("../src/images/cocinas/cocina 3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .cocina4 {
+  grid-area: item4;
+  background: url("../src/images/cocinas/cocina 4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina5 {
+  grid-area: item5;
+  background: url("../src/images/cocinas/cocina 5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina6 {
+  grid-area: item6;
+  background: url("../src/images/cocinas/cocina 6.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina7 {
+  grid-area: item7;
+  background: url("../src/images/cocinas/cocina 7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina8 {
+  grid-area: item8;
+  background: url("../src/images/cocinas/cocina 8.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina9 {
+  grid-area: item9;
+  background: url("../src/images/cocinas/cocina 9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 60%;
+}
+main .cocina10 {
+  grid-area: item10;
+  background: url("../src/images/cocinas/cocina 10.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina11 {
+  grid-area: item11;
+  background: url("../src/images/cocinas/cocina 11.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+}
+main .cocina12 {
+  grid-area: item12;
+  background: url("../src/images/cocinas/cocina 12.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 60%;
+}
+main .dormitorio1 {
+  grid-area: item1;
+  background: url("../src/images/dormitorios/Comoda y estantes flotantes.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+}
+main .dormitorio2 {
+  grid-area: item2;
+  background: url("../src/images/dormitorios/cajonera industrial.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 65%;
+}
+main .dormitorio3 {
+  grid-area: item3;
+  background: url("../src/images/dormitorios/Modular.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 38% 65%;
+}
+main .dormitorio4 {
+  grid-area: item4;
+  background: url("../src/images/dormitorios/RACK TV.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 80%;
+}
+main .dormitorio5 {
+  grid-area: item5;
+  background: url("../src/images/dormitorios/placard con cajonera y rack tv.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 65%;
+}
+main .dormitorio6 {
+  grid-area: item6;
+  background: url("../src/images/dormitorios/cama.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 65%;
+}
+main .dormitorio7 {
+  grid-area: item7;
+  background: url("../src/images/dormitorios/placard 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 80%;
+}
+main .dormitorio8 {
+  grid-area: item8;
+  background: url("../src/images/dormitorios/placard 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 50%;
+}
+main .dormitorio9 {
+  grid-area: item9;
+  background: url("../src/images/dormitorios/placard 3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 50%;
+}
+main .dormitorio10 {
+  grid-area: item10;
+  background: url("../src/images/dormitorios/placard 4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+main .dormitorio11 {
+  grid-area: item11;
+  background: url("../src/images/dormitorios/vestidor.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+main .baño1 {
+  grid-area: item1;
+  background: url("../src/images/baños/baño 1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 80%;
+}
+main .baño2 {
+  grid-area: item2;
+  background: url("../src/images/baños/baño 2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+main .parrafoGaleria {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* DEFINO LA LISTA COLORES A UTILIZAR EN EL SITIO*/
+/* Defino caracteristicas del footer */
+.social-footer {
+  padding: 1rem;
+  background: #54595F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-footer .social-footer-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.social-footer .social-footer-icons .fa:hover {
+  color: #181a1b;
+  transition: color 0.3s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

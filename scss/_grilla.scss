@@ -1,0 +1,350 @@
+/*Grilla */
+@import 'generales';
+
+main{
+
+    /* DEFINO CARACTERISTICAS GENERALES */
+    @mixin portada ($fondo,$align,$pdng){
+        grid-area: portada;
+        background: $fondo;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: $align;
+        color: nth($colores, 1);
+        padding: $pdng;
+    }
+
+    .parrafo {
+        margin-top: 5px;
+        font-size: map-get($map: $headings, $key: 'h5');
+    }
+
+    .boton {
+        background-color: transparent;
+        color: nth($colores, 1);
+        border: 1px solid nth($colores, 1);
+        padding: 20px 50px 20px 50px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: all .1s;
+    
+        &:hover {
+            background-color: nth($colores, 1);
+            color: nth($colores, 2);;
+        }
+    }
+
+    /* DEFINO CARACTERISTICAS DE MI HOME PAGE */
+
+    @mixin foto ($area,$fondo){
+        grid-area: $area;
+        background: $fondo;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        cursor: pointer;
+        color: nth($colores, 1);
+        font-size: 50px;
+        padding: 25vh;
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+        opacity: 50%;
+
+        &:hover{
+            color: transparent;
+            transition: all .3s ease;
+            transform: scale(0.96); /* (96% zoom) */
+            opacity: 100%;
+        }
+    }
+
+    .cocina {
+        @include foto(cocina,url('../src/images/cocinas/cocina\ 2.jpeg'));
+    }
+
+    .dormitorio {
+        @include foto(dormitorio,url('../src/images/dormitorios/placard\ 1.jpeg'));
+    }
+
+    .baño {
+        @include foto(baño,url('../src/images/baños/baño\ 1.jpeg'));
+    }
+
+    .portadaHome{
+        @include portada(url('../src/images/cocinas/cocina\ 1.jpeg'),left,25vh 10vh);
+        background-position: 50% 40%;
+        opacity: 100%;
+    }
+
+    .trabajos {
+        grid-area: trabajos;
+        background-color: nth($colores, 1);
+        color: nth($colores, 3);
+        margin: 20vh;
+        font-size: map-get($map: $headings, $key: 'h4');
+    }
+
+    .solid{
+        margin: 2vh auto;
+        border: 1px solid nth($colores, 3);
+        width: 100px;
+    }
+
+    /* FORM DE CONTACTO DENTRO DE MI HOME PAGE */
+
+    .contacto {
+        grid-area: contacto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        padding-left: 25vw;
+
+        &:after{
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 30vh;
+            background-color: nth($colores, 4);
+            z-index: -1;
+        }
+    }
+
+    .presupuestoRespuesta {
+        @extend .parrafo;
+        color: nth($colores, 3);
+        padding-bottom: 20px;
+    }
+
+    .contact-box{
+        max-width: 50vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: nth($colores, 1);;
+    }
+
+    .left{
+        height: 50%;
+        background: url("../src/images/mapas/1.jpeg") no-repeat center;
+        background-size: cover;
+    }
+
+    .right{
+        padding: 50px 40px;
+    }
+
+    .field{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0,0,0,0);
+        background-color: nth($colores, 4);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+
+        &:hover{
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        &:focus{
+            background-color: nth($colores, 1);
+            border: 2px solid nth($colores, 2);
+        }
+    }
+
+    .area{
+        min-height: 150px;
+    }
+
+    .btn{
+        @extend .boton;
+        background-color: nth($colores, 2);
+        color: nth($colores, 1);
+        border: 1px solid nth($colores, 2);
+        margin-top: 0px;
+        padding: 10px 50px 10px 50px;
+        border-radius: 4px;
+    }
+
+    /* FIN DE FORMULARIO DE CONTACTO */    
+    /* FIN DE MI HOME PAGE */
+
+    /* DEFINO CARACTERISTICAS DE MIS GALERIAS DE FOTOS */
+    
+    .portadaCocina{
+        @include portada(url('../src/images/cocinas/cocina\ 3.jpeg'),center,10vh 10vh);
+        background-position: 50% 65%;
+        opacity: 80%;
+    }
+
+    .portadaDormitorio{
+        @include portada(url('../src/images/dormitorios/Modular.jpeg'),center,10vh 10vh);
+        background-position: 50% 220%;
+        opacity: 100%;
+    }
+
+    .portadaBaño{
+        @include portada(url('../src/images/baños/baño\ 1.jpeg'),center,10vh 10vh);
+        background-position: 0% 95%;
+        opacity: 100%;
+    }
+ 
+
+    @mixin fotoGaleria ($area,$fondo){
+        grid-area: $area;
+        background: $fondo;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* FOTOS DE COCINAS */
+
+    .cocina1 {
+        @include fotoGaleria(item1,url('../src/images/cocinas/cocina\ 1.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina2 {
+        @include fotoGaleria(item2,url('../src/images/cocinas/cocina\ 2.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina3 {
+        @include fotoGaleria(item3,url('../src/images/cocinas/cocina\ 3.jpeg'));
+    }
+
+    .cocina4 {
+        @include fotoGaleria(item4,url('../src/images/cocinas/cocina\ 4.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina5 {
+        @include fotoGaleria(item5,url('../src/images/cocinas/cocina\ 5.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina6 {
+        @include fotoGaleria(item6,url('../src/images/cocinas/cocina\ 6.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina7 {
+        @include fotoGaleria(item7,url('../src/images/cocinas/cocina\ 7.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina8 {
+        @include fotoGaleria(item8,url('../src/images/cocinas/cocina\ 8.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina9 {
+        @include fotoGaleria(item9,url('../src/images/cocinas/cocina\ 9.jpeg'));
+        background-position: 40% 60%;
+    }
+
+    .cocina10 {
+        @include fotoGaleria(item10,url('../src/images/cocinas/cocina\ 10.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina11 {
+        @include fotoGaleria(item11,url('../src/images/cocinas/cocina\ 11.jpeg'));
+        background-position: 50% 65%;
+    }
+
+    .cocina12 {
+        @include fotoGaleria(item12,url('../src/images/cocinas/cocina\ 12.jpeg'));
+        background-position: 40% 60%;
+    }
+
+    /* FIN FOTOS DE COCINAS */
+
+    /* FOTOS DE DORMITORIOS */
+
+    .dormitorio1 {
+        @include fotoGaleria(item1,url('../src/images/dormitorios/Comoda\ y\ estantes\ flotantes.jpeg'));
+        background-position: 80%;
+    }
+
+    .dormitorio2 {
+        @include fotoGaleria(item2,url('../src/images/dormitorios/cajonera\ industrial.jpeg'));
+        background-position: 0 65%;
+    }
+
+    .dormitorio3 {
+        @include fotoGaleria(item3,url('../src/images/dormitorios/Modular.jpeg'));
+        background-position: 38% 65%;
+    }
+
+    .dormitorio4 {
+        @include fotoGaleria(item4,url('../src/images/dormitorios/RACK\ TV.jpeg'));
+        background-position: 35% 80%;
+    }
+
+    .dormitorio5 {
+        @include fotoGaleria(item5,url('../src/images/dormitorios/placard\ con\ cajonera\ y\ rack\ tv.jpeg'));
+        background-position: 75% 65%;
+    }
+
+    .dormitorio6 {
+        @include fotoGaleria(item6,url('../src/images/dormitorios/cama.jpeg'));
+        background-position: 5% 65%;
+    }
+
+    .dormitorio7 {
+        @include fotoGaleria(item7,url('../src/images/dormitorios/placard\ 1.jpeg'));
+        background-position: 70% 80%;
+    }
+
+    .dormitorio8 {
+        @include fotoGaleria(item8,url('../src/images/dormitorios/placard\ 2.jpeg'));
+        background-position: 75% 50%;
+    }
+
+    .dormitorio9 {
+        @include fotoGaleria(item9,url('../src/images/dormitorios/placard\ 3.jpeg'));
+        background-position: 5% 50%;
+    }
+
+    .dormitorio10 {
+        @include fotoGaleria(item10,url('../src/images/dormitorios/placard\ 4.jpeg'));
+        background-position: 40% 50%;
+    }
+
+    .dormitorio11 {
+        @include fotoGaleria(item11,url('../src/images/dormitorios/vestidor.jpeg'));
+        background-position: 40% 50%;
+    }
+
+    /* FIN FOTOS DE DORMITORIOS */
+
+    /* FOTOS DE BAÑOS */
+
+    .baño1 {
+        @include fotoGaleria(item1,url('../src/images/baños/baño\ 1.jpeg'));
+        background-position: 60% 80%;
+    }
+
+    .baño2 {
+        @include fotoGaleria(item2,url('../src/images/baños/baño\ 2.jpeg'));
+        background-position: 50% 80%;
+    }
+
+    /* FIN FOTOS DE BAÑOS */
+
+    .parrafoGaleria {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* FIN GALERIAS DE FOTOS */
+
+}

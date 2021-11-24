@@ -1,0 +1,182 @@
+@import 'colores';
+@import 'header';
+@import 'grilla';
+
+/* ARCHIVO A DONDE DEFINO LOS MEDIA QUERYS PARA QUE EL SITIO SEA RESPONSIVE, TODAVIA TENGO QUE TRABAJAR EN ESTO, LO EMPECE PERO ME FALTA AJUSTARLO*/
+
+/* Media query Mobile*/
+@media (max-width: 480px){
+    header{
+        padding: 10px;
+        
+        label{
+            display: initial;
+        }
+
+        .navbar{
+            position: relative;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: nth($colores, 1);
+            border-top: 1px solid rgba(0,0,0,.1);
+            display: none;
+
+            ul{
+                text-align: center;
+                li{
+                    width: 100%;
+
+                    ul {
+                        position: relative;
+                        width: 100%;
+
+                        li{
+                            background: nth($colores, 3);
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    } 
+
+    main{
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 70vh 50vh 60vh 60vh 60vh 120vh;
+            /* Especie de margin entre las columnas */
+            text-align: center;
+            font-size: 1.5rem;
+            grid-template-areas:
+            "portada"
+            "trabajos"
+            "cocina"
+            "dormitorio" 
+            "baño"
+            "contacto";
+        }
+
+        .contacto {
+            margin-left: 10vw;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+        .foto {
+            margin-top: -10vh;
+        }
+    }    
+}
+
+/* Media query Tablet*/
+@media (min-width: 480px) and (max-width: 768px){
+    header{
+        padding: 10px;
+        
+        label{
+            display: initial;
+        }
+
+        .navbar{
+            position: relative;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: nth($colores, 1);
+            border-top: 1px solid rgba(0,0,0,.1);
+            display: none;
+
+            ul{
+                text-align: center;
+                li{
+                    width: 100%;
+
+                    ul {
+                        position: relative;
+                        width: 100%;
+
+                        li{
+                            background: nth($colores, 3);
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    } 
+
+    main{
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 70vh 50vh 60vh 60vh 60vh 80vh;
+            /* Especie de margin entre las columnas */
+            text-align: center;
+            justify-content: stretch;
+            font-size: 1.5rem;
+            grid-template-areas:
+            "portada"
+            "trabajos"
+            "cocina"
+            "dormitorio" 
+            "baño"
+            "contacto";
+        }
+        h1 {
+            font-size: 35px;
+        }
+        .foto {
+            margin-top: -10vh;
+        }
+    }
+
+}
+
+/* Media query Desktop*/
+@media (min-width: 769px){
+    /* Media query para mi home */
+    .grid-container {
+        display: grid;
+        margin: 70px 0 40px 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 60vh 40vh 50vh 70vh;
+        /* Especie de margin entre las columnas */
+        text-align: center;
+        justify-content: stretch;
+        font-size: 1.5rem;
+        grid-template-areas:
+        "portada portada portada"
+        "trabajos trabajos trabajos"
+        "cocina dormitorio baño"
+        "contacto contacto contacto";
+    }
+    /* Media query para las galerias */
+    .grid-container-galeria {
+        display: grid;
+        margin: 70px 0 40px 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 30vh 20vh 65vh 65vh 65vh 65vh;
+        /* Especie de margin entre las columnas */
+        text-align: center;
+        justify-content: stretch;
+        font-size: 1.5rem;
+        gap: 10px;
+        grid-template-areas:
+        "portada portada portada"
+        "trabajos trabajos trabajos"
+        "item1 item2 item3"
+        "item4 item5 item6"
+        "item7 item8 item9"
+        "item10 item11 item12"
+        "contacto contacto contacto";
+    }
+}

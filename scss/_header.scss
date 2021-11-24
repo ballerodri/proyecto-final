@@ -1,0 +1,88 @@
+@import 'colores';
+
+/* Defino caracteristicas del header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: nth($colores, 1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 10px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+    /* Defino caracteristicas del logo */
+    .logo{
+        height: 50px;
+    }
+
+    label {
+        font-size: 20px;
+        color: nth($colores, 2);
+        cursor: pointer;
+        display: none;    
+    }
+
+    .navbar {
+
+        ul{
+            list-style: none;
+            text-transform: capitalize;
+    
+            li {
+                position: relative;
+                float: left;
+    
+                a{
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    color: nth($colores, 2);
+                    border-radius: 3px;
+                    display: block;
+                    text-decoration: none;
+    
+                    &.active,&:hover{
+                        background: nth($colores, 3);
+                        color: nth($colores, 1);
+                        transition: .5s;
+
+                    }
+                }
+
+                &:focus-within,&:hover > ul{
+                    display: initial;
+                    transition: .5s;
+                }
+
+
+
+                ul {
+                    position: absolute;
+                    left: 0;
+                    width: 200px;
+                    background: nth($colores, 1);
+                    display: none;
+
+                    li{
+                        width:100%;
+                        border-top: 1px solid rgba(0,0,0,.1);
+                    }
+                }
+            }
+        }
+    }    
+}
+
+#menu-bar{
+    display: none;
+}
+
+
+
+
+
+
+

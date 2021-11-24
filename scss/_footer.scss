@@ -1,0 +1,27 @@
+@import 'colores';
+
+/* Defino caracteristicas del footer */
+.social-footer {
+  padding: 1rem;
+  background: nth($colores, 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-footer-icons {
+    li {
+		display: inline;
+      	margin-right: 10px;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: nth($colores, 1);
+
+      &:hover {
+        color: darken(nth($colores, 3), 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}

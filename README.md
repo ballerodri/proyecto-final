@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Rodrigo Ballesteros</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ballerodri&label=Profile%20views&color=0e75b6&style=flat" alt="ballerodri" /> </p>
+
 - 🔭 I’m currently working on **FAB website**
 
 - 🌱 I’m currently learning **HTML & CSS**
